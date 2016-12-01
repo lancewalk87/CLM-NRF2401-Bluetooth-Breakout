@@ -87,17 +87,15 @@ void config(void) {
  	SPI_Send(0x07);
     SPI_CSN = 1;
     SPI_CSN = 0;
-
-	//set channel 2, this is default but we did it anyway...
    	SPI_Send(0x25);
  	SPI_Send(0x02);
     SPI_CSN = 1;
-    SPI_CSN = 0;
+    SPI_CSN = 0; 
 
-	//set address E7E7E7E7E7, also default...
    	SPI_Send(0x30);
     for (j = 0; j < 5; j++)
     {
+
         SPI_Send(0xE7);
     }
     SPI_CSN = 1;
