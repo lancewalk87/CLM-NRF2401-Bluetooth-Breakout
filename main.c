@@ -93,8 +93,7 @@ void config(void) {
     SPI_CSN = 0; 
 
    	SPI_Send(0x30);
-    for (j = 0; j < 5; j++)
-    {
+    for (j = 0; j < 5; j++) {
 
         SPI_Send(0xE7);
     }
